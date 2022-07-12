@@ -1,0 +1,16 @@
+#!/bin/bash
+free -h | awk 'NR==2{print $4,"freememory space is"}'
+
+to run in any of path 
+use which ls 
+which pwd
+which cp
+
+all present in bin location /usr/bin - < predefined path >
+
+====need to copy to this bin location to make it run any place ===
+
+export PATH=${PATH}:/home/ec2-user/usercmds/bin == export temporarly 
+
+vi .bash_profile == need to add in this file for permanent
+to get it reflected run source .bash_profile
